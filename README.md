@@ -1,3 +1,7 @@
+<form action="https://www.google.com/search" method="get" target="_blank">
+  <input type="text" name="q" placeholder="Search Google..." />
+  <button type="submit">Search</button>
+</form>
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
