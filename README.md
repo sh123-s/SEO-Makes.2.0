@@ -118,3 +118,7 @@
     }
   </script></body>
 </html>
+Title: Amazing education Video You Can't Miss!
+Thumbnail: Generated thumbnail for education
+Description: This education video is optimized with AI insights from Google, YouTube, Facebook, Instagram, Deep Seek, and ChatGPT.
+Tags: #education #AItools #ContentCreation #Marketing
