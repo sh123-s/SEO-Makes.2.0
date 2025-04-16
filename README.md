@@ -1,187 +1,120 @@
-# SEO-Makes.2.0
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free AI content tools, website performance analyzers, and SEO marketing utilities. Generate content, check website speed, analyze SEO metrics, and improve core web vitals with our comprehensive web toolkit.">
-    <title>Digital Toolkit Pro: AI, SEO & Web Performance Tools</title>
-    <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            background: #f0f2f5;
-            line-height: 1.6;
-        }
-
-        /* Header Styles */
-        .header {
-            background: #1a73e8;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        /* Tool Categories Grid */
-        .tool-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        /* Tool Card Styles */
-        .tool-card {
-            background: white;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .tool-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .tool-card h2 {
-            color: #1a73e8;
-            margin-bottom: 1rem;
-            font-size: 1.25rem;
-        }
-
-        .tool-list {
-            list-style: none;
-        }
-
-        .tool-item {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .launch-btn {
-            background: #1a73e8;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: opacity 0.3s ease;
-        }
-
-        .launch-btn:hover {
-            opacity: 0.9;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .tool-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .container {
-                margin: 1rem auto;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI & Content Tools and Website & Performance Tools and SEO & Digital Marketing Tools helps you analyze and generate optimized titles, thumbnails, descriptions, and tags for your videos using data from platforms like Google, YouTube, Facebook, Instagram, Deep Seek, and ChatGPT." />
+  <title>AI & Content Tools</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #161b22;
+    }
+    h1 {
+      color: #ff4c4c;
+    }
+    .container {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .form-section {
+      background-color: #21262d;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input[type="file"], select, button {
+      display: block;
+      margin: 15px 0;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      background-color: #30363d;
+      color: #e6edf3;
+    }
+    button {
+      background-color: #ff4c4c;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 20px;
+      background-color: #1c1f26;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .copy-btn {
+      margin-top: 10px;
+      background-color: #238636;
+    }
+    .footer-links a {
+      color: #58a6ff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Digital Toolkit Pro</h1>
-        <p>Your All-in-One Solution for AI, SEO & Web Performance</p>
-    </header>
+  <header>
+    <h1>AI & Content Tools and Digital Marketing Suite</h1>
+  </header>
+  <div class="container">
+    <div class="form-section">
+      <label for="videoUpload">Upload Your Video:</label>
+      <input type="file" id="videoUpload" accept="video/*" /><label for="categorySelect">Select Category:</label>
+  <select id="categorySelect">
+    <option value="education">Education</option>
+    <option value="entertainment">Entertainment</option>
+    <option value="technology">Technology</option>
+    <option value="health">Health</option>
+    <option value="lifestyle">Lifestyle</option>
+  </select>
 
-    <div class="container">
-        <!-- AI & Content Tools Section -->
-        <section class="tool-card">
-            <h2>🛠️ AI & Content Tools</h2>
-            <ul class="tool-list">
-                <li class="tool-item">
-                    <span>AI Content Detector</span>
-                    <button class="launch-btn">Launch</button>
-                </li>
-                <li class="tool-item">
-                    <span>Text Summarizer</span>
-                    <button class="launch-btn">Launch</button>
-                </li>
-                <li class="tool-item">
-                    <span>Paraphrasing Tool</span>
-                    <button class="launch-btn">Launch</button>
-                </li>
-            </ul>
-        </section>
+  <button onclick="generateContent()">Get AI-Powered Insights</button>
 
-        <!-- Website & Performance Tools Section -->
-        <section class="tool-card">
-            <h2>⚡ Website Performance Tools</h2>
-            <ul class="tool-list">
-                <li class="tool-item">
-                    <span>Speed Test Analyzer</span>
-                    <button class="launch-btn">Launch</button>
-                </li>
-                <li class="tool-item">
-                    <span>Mobile Friendly Test</span>
-                    <button class="launch-btn">Launch</button>
-                </li>
-                <li class="tool-item">
-                    <span>Core Web Vitals Checker</span>
-                    <button class="launch-btn">Launch</button>
-                </li>
-            </ul>
-        </section>
+  <div id="result" class="result" style="display: none;">
+    <h3>Generated Data:</h3>
+    <p><strong>Title:</strong> <span id="title"></span></p>
+    <p><strong>Thumbnail:</strong> <span id="thumbnail"></span></p>
+    <p><strong>Description:</strong> <span id="description"></span></p>
+    <p><strong>Tags:</strong> <span id="tags"></span></p>
+    <button class="copy-btn" onclick="copyResults()">Copy All</button>
+  </div>
+</div>
 
-        <!-- SEO & Marketing Tools Section -->
-        <section class="tool-card">
-            <h2>🔍 SEO & Marketing Tools</h2>
-            <ul class="tool-list">
-                <li class="tool-item">
-                    <span>Keyword Difficulty Checker</span>
-                    <button class="launch-btn">Launch</button>
-                </li>
-                <li class="tool-item">
-                    <span>SERP Preview Tool</span>
-                    <button class="launch-btn">Launch</button>
-                </li>
-                <li class="tool-item">
-                    <span>Backlink Analyzer</span>
-                    <button class="launch-btn">Launch</button>
-                </li>
-            </ul>
-        </section>
+  </div>  <footer>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
     </div>
+    <p>&copy; 2025 AI & Content Tools</p>
+  </footer>  <script>
+    function generateContent() {
+      const category = document.getElementById("categorySelect").value;
 
-    <script>
-        // Basic Tool Launcher Functionality
-        document.querySelectorAll('.launch-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const toolName = button.previousElementSibling.textContent;
-                alert(`🚀 Launching: ${toolName}\n(Note: This is a demo interface - backend integration required for full functionality)`);
-            });
-        });
+      // Simulate content generation
+      document.getElementById("title").textContent = `Amazing ${category} Video You Can't Miss!`;
+      document.getElementById("thumbnail").textContent = `Generated thumbnail for ${category}`;
+      document.getElementById("description").textContent = `This ${category} video is optimized with AI insights from Google, YouTube, Facebook, Instagram, Deep Seek, and ChatGPT.`;
+      document.getElementById("tags").textContent = `#${category} #AItools #ContentCreation #Marketing`;
 
-        // Simple Service Worker for Offline Support
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .catch(err => console.log('ServiceWorker registration failed: ', err));
-            });
-        }
-    </script>
-</body>
+      document.getElementById("result").style.display = "block";
+    }
+
+    function copyResults() {
+      const title = document.getElementById("title").textContent;
+      const thumbnail = document.getElementById("thumbnail").textContent;
+      const description = document.getElementById("description").textContent;
+      const tags = document.getElementById("tags").textContent;
+      const textToCopy = `Title: ${title}\nThumbnail: ${thumbnail}\nDescription: ${description}\nTags: ${tags}`;
+      navigator.clipboard.writeText(textToCopy).then(() => alert("Copied to clipboard!"));
+    }
+  </script></body>
 </html>
